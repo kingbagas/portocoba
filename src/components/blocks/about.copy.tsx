@@ -1,10 +1,9 @@
-import Icon from '../utils/icon';
 
 // Define the props for the CopyBlock component
 interface CopyBlockProps {
     containerClass: string;
     iconClass: string;
-    icon: string; // Change the type of icon to string
+    icon: string;
     title: string;
     copy: string;
 }
@@ -13,7 +12,6 @@ interface CopyBlockProps {
 export default function CopyBlock({
     containerClass,
     iconClass,
-    icon,
     title,
     copy,
 }: CopyBlockProps) {
@@ -21,7 +19,6 @@ export default function CopyBlock({
     return (
         <div className={containerClass}>
             <span className={iconClass}>
-                <Icon icon={icon} />
             </span>
             <h3>{title}</h3>
             <p>{copy}</p>
